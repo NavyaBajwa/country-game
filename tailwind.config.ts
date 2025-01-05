@@ -11,8 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tiffany: "#a4cbbf",
       },
+      fontFamily: {
+        display: ["Bowlby One SC", "sans-serif"],
+        paragraph: ["Roboto Condensed", "sans-serif"]
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 } satisfies Config;
